@@ -80,7 +80,7 @@ header {
 .footer {
     background: #222;
     color: #eee;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .footer-cta {
@@ -88,19 +88,21 @@ header {
     margin-bottom: 40px;
 }
 
+
 .footer-cta input[type="email"] {
     padding: 10px;
     border-radius: 5px;
     border: none;
     width: 250px;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .footer-links {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer-links div {
@@ -229,61 +231,53 @@ responsive */
 
 @media screen and (max-width: 768px) {
     .nav-content {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .main-nav ul {
-        flex-direction: column; /* Stack nav items vertically */
-        width: 100%; /* Full width for mobile */
+        flex-direction: column; 
+        width: 100%; 
     }
 
     .main-nav ul li {
-        margin: 10px 0; /* Spacing between nav items */
+        margin: 10px 0;
     }
 
     .footer-links {
-        flex-direction: column; /* Stack footer links vertically */
-        align-items: center; /* Center footer links */
+        flex-direction: column; 
+        align-items: center; 
     }
     .footer-links div {
-        margin: 20px 0; /* Adjust margin for stacked footer links */
+        margin: 20px 0; 
     }
     .footer-cta input[type="email"] {
-        width: 100%; /* Full width for email input on smaller screens */
-        margin-bottom: 10px; /* Add margin below input */
+        width: 100%; 
+        margin-bottom: 10px; 
     }
     .footer-cta {
-        padding: 0 20px; /* Add padding for footer CTA */
+        padding: 0 20px; 
     }
     .footer-bottom {
-        padding: 20px 0; /* Add padding for footer bottom */
+        padding: 20px 0; 
     }
     .footer-links ul li a {
-        font-size: 0.9em; /* Adjust font size for footer links */
+        font-size: 0.9em; 
     }
   
     .top-nav-bar {
-        padding: 10px 0; /* Adjust padding for top nav bar on smaller screens */
+        padding: 10px 0; 
     }
     .logo a {
-        font-size: 1.2em; /* Adjust logo font size for smaller screens */
+        font-size: 1.2em;
     }
     .main-nav ul li a {
-        font-size: 0.8em; /* Adjust nav link font size for smaller screens */
+        font-size: 0.8em; 
     }
     .main-nav ul li a:hover,
     .main-nav ul li a.active {
-        font-size: 0.9em; /* Adjust hover/active link font size for smaller screens */
+        font-size: 0.9em; 
     }
-    .footer-cta input[type="email"] {
-        width: 100%; /* Full width for email input on smaller screens */
-        margin-bottom: 10px; /* Add margin below input */
-    }
-    .footer-cta {
-        padding: 0 20px; /* Add padding for footer CTA */
-    }
-
     
 }
 

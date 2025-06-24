@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Basic Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Guud ahaan Header styles */
+header {
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+.top-nav-bar {
+    padding: 7px 0;
+    border-bottom: 1px solid #eee; /* Separator between nav and hero */
+    max-width: 900px; /* Center the nav bar */
+    margin: 0 auto; /* Center the nav bar */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.logo a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Navigation (ul, li, a) */
+.main-nav ul {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin: 0 15px; 
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #555; 
+    font-weight: 500;
+    font-size: 0.9em;
+    padding: 5px 0;
+    transition: color 0.3s ease; 
+}
+
+.main-nav ul li a:hover,
+.main-nav ul li a.active {
+    color: #007bff; 
+}
+
+
+
+
+
+/* Footer */
+.footer {
+    background: #222;
+    color: #eee;
+    padding: 40px 0;
+}
+
+.footer-cta {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-cta input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-links div {
+    margin: 20px;
+}
+
+.footer-links h4 {
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: #eee;
+    text-decoration: none;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .main-nav ul li {
+        margin: 10px 0; /* Spacing between nav items */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Stack footer links vertically */
+        align-items: center; /* Center footer links */
+    }
+    .footer-links div {
+        margin: 20px 0; /* Adjust margin for stacked footer links */
+    }
+    .footer-cta input[type="email"] {
+        width: 100%; /* Full width for email input on smaller screens */
+        margin-bottom: 10px; /* Add margin below input */
+    }
+    .footer-cta {
+        padding: 0 20px; /* Add padding for footer CTA */
+    }
+    .footer-bottom {
+        padding: 20px 0; /* Add padding for footer bottom */
+    }
+    .footer-links ul li a {
+        font-size: 0.9em; /* Adjust font size for footer links */
+    }
+  
+    .top-nav-bar {
+        padding: 10px 0; /* Adjust padding for top nav bar on smaller screens */
+    }
+    .logo a {
+        font-size: 1.2em; /* Adjust logo font size for smaller screens */
+    }
+    .main-nav ul li a {
+        font-size: 0.8em; /* Adjust nav link font size for smaller screens */
+    }
+    .main-nav ul li a:hover,
+    .main-nav ul li a.active {
+        font-size: 0.9em; /* Adjust hover/active link font size for smaller screens */
+    }
+    .footer-cta input[type="email"] {
+        width: 100%; /* Full width for email input on smaller screens */
+        margin-bottom: 10px; /* Add margin below input */
+    }
+    .footer-cta {
+        padding: 0 20px; /* Add padding for footer CTA */
+    }
+
+    
+}

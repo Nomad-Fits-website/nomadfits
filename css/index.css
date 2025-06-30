@@ -1,4 +1,4 @@
-/* mahamed_abdifetah */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -25,6 +25,26 @@ header {
     top: 0;
     z-index: 1000; 
 }
+
+button {
+   border: none;
+   background-color: white;
+   padding-left: 50px;
+   font-size: 1.2rem;
+}
+
+.cart-coun{
+margin-right: 2rem;
+}
+
+
+ 
+ button a {
+ text-decoration: none;
+
+
+ }
+
 
 .top-nav-bar {
     padding: 7px 0;
@@ -355,7 +375,7 @@ p {
   gap: 10px;
 }
 
-#wed { 
+#wed, #sortFilter { 
     position: relative;
     left : 18rem;
     border: 1px solid #f3f3f3;
@@ -533,6 +553,114 @@ responsive */
     }
     
 }
+/* Mobile: Small Screens (max-width: 600px) */
+@media (max-width: 600px) {
+ 
+
+  .Shop {
+    right: 0;
+     text-align:  center;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+
+  #wed, 
+  #categoryFilter, 
+  #sortFilter {
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight:700;
+    
+  }
+
+  .filters {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*   ================================================================================================================ */
+
+/* Tablet: Medium Screens (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .Featured {
+    font-size: 2rem;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .Shop {
+    right: 0;
+    text-align:  center;
+  }
+
+  #wed, 
+  #categoryFilter, 
+  #sortFilter {
+    left: 0;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .collection-grid,
+  .product-grid,
+  .categores {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+}
+
+/* Desktop: Large Screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .filters {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #wed, 
+  #categoryFilter, 
+  #sortFilter {
+    font-size: large;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 

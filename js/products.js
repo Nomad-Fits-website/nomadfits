@@ -200,7 +200,7 @@ function displayApi() {
     const productGrid = document.querySelector(".product-grid");
     productGrid.innerHTML = "";
 
-    products.slice(0, 8).forEach((product, index) => {
+    products.forEach((product, index) => {
       const productElement = allApi(product, index);
       productGrid.appendChild(productElement);
     });

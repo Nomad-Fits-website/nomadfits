@@ -13,58 +13,52 @@
 
   <header>
     <div class="top-nav-bar">
+    
       <div class="container nav-content">
+        
         <div class="logo">
           <a href="index.html">Nomad Fits</a>
         </div>
-        <nav class="main-nav">
+
+        <nav class="main-nav" id="mainNav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="products.html">Products</a></li>
-
-                         <button class="cart-btn" id="cartBtn">
-                        <a href="cart.html">
-                            <span> 🛒</span>
-                            <!-- <img src="shopping-cart (1).png" alt="imag cart"> -->
-                            <span class="cart-count" id="cartCount">0</span>
-                        </a>  
-                        
-                        
-                    </button>
+            <li><a href="#product-grid">Products</a></li>
           </ul>
         </nav>
 
+        <!-- nav icons -->
+         <div class="nav-icons">
+                    <button class="cart-btn" id="cartBtn">
+                        <a href="cart.html">
+                            <span> 🛒</span>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        ☰ </button>
+                </div>
       </div>
-  </header>
+    </header>
 
 
   <!-- hero page -->
   <section class="hero">
-   
 
-    
-   
-      <h1>Wear The Journey.<br>Live The Adventure.</h1>
-      <p>Nomad Fits stylish, Comfortable & Adventure-Ready Clothing For The Modern Men</p>
+    <h1>Wear The Journey.<br>Live The Adventure.</h1>
+    <p>Nomad Fits stylish, Comfortable & Adventure-Ready Clothing For The Modern Men</p>
 
-      <div class="buttons">
+    <div class="buttons">
 
-        <button class="btn one">
-          Shop Now ➔
-          <!-- <span class="arrow">&rarr;</span> -->
-        </button>
-        <button class="btn two">
-          Explore Collections
-        </button>
-
-
-      
-
-
-
-
+      <button class="btn one">
+        Shop Now ➔
+        <!-- <span class="arrow">&rarr;</span> -->
+      </button>
+      <button class="btn two">
+        Explore Collections
+      </button>
 
     </div>
   </section>
@@ -74,7 +68,7 @@
   <!-- abdinasir -->
 
   <section class="collections">
-    <h1 class="Featured" >Featured Collections</h1>
+    <h1 class="Featured">Featured Collections</h1>
     <div class="collection-grid"></div>
   </section>
 
@@ -99,7 +93,7 @@
     </div>
   </div>
 
-  <div class="product-grid"></div>
+  <div class="product-grid" id="product-grid"></div>
 
 
 
@@ -110,7 +104,7 @@
       <div class="footer-cta">
         <h3>Join the Nomad Community</h3>
         <input type="email" placeholder="Enter your email">
-      
+
       </div>
       <div class="footer-links">
         <div>
@@ -150,9 +144,10 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="js/scribt.js" defer></script>
+  <script src="js/menuToggle.js" defer></script>
 
 
   <!-- main -->

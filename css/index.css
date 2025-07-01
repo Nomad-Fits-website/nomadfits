@@ -26,31 +26,62 @@ header {
     z-index: 1000; 
 }
 
-button {
-   border: none;
-   background-color: white;
-   padding-left: 50px;
-   font-size: 1.2rem;
+
+
+ /* Nav Icons (cart & menu toggle) */
+.nav-icons {
+    display: flex; 
+    align-items: center;
+    gap: 15px; 
 }
 
-.cart-coun{
-margin-right: 2rem;
+
+.menu-toggle {
+    display: none; 
+    background: none;
+    border: none;
+    font-size: 1.5em; 
+    cursor: pointer;
+    color: #333; 
+    padding: 5px;
+    z-index: 1001; 
 }
 
 
- 
- button a {
- text-decoration: none;
-
-
- }
-
+.cart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0; 
+}
+.cart-btn a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+.cart-btn span {
+    font-size: 1em; 
+}
+.cart-count {
+    background-color: #007bff; 
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 0.7em;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    min-width: 18px; 
+    text-align: center;
+}
 
 .top-nav-bar {
     padding: 7px 0;
-    border-bottom: 1px solid #eee; /* Separator between nav and hero */
-    max-width: 900px; /* Center the nav bar */
-    margin: 0 auto; /* Center the nav bar */
+    border-bottom: 1px solid #eee; 
+    max-width: 900px;
+    margin: 0 auto; 
 }
 
 .nav-content {
@@ -308,12 +339,7 @@ p {
 
 
 
-
-
-
-
 .categores {
-
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -326,7 +352,7 @@ p {
 
 .categores  .shirt {
 
-    background-color: #fff;
+  background-color: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -386,10 +412,6 @@ p {
     border: none;   
       
 } 
-
-
-
-
 
 
 .product-grid {
@@ -503,19 +525,56 @@ p {
 responsive */
 
 @media screen and (max-width: 768px) {
-    .nav-content {
-        flex-direction: column;
-        align-items: flex-start;
+
+  .nav-content {
+       padding: 0 20px; 
+    }
+    .main-nav ul {
+        display: none; 
+        flex-direction: column; 
+        position: absolute;
+        top: var(--header-height, 60px); 
+        left: 0;
+        width: 100%;
+        background-color: #fff; 
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+        z-index: 999;
     }
 
-    .main-nav ul {
-        flex-direction: column; 
-        width: 100%; 
+    .main-nav ul.active { 
+        display: flex; 
     }
 
     .main-nav ul li {
-        margin: 10px 0;
+        margin: 0; 
+        text-align: center;
+        width: 100%;
     }
+
+    .main-nav ul li a {
+        display: block; 
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+        font-size: 1.2em;
+    }
+
+    .main-nav ul li:last-child a {
+        border-bottom: none; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+
+    .main-nav {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        flex-grow: 1; 
+    }
+
 
     .footer-links {
         flex-direction: column; 

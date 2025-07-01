@@ -192,11 +192,12 @@ header {
     min-height: 80vh; /* Hubi inuu boggu u muuqdo mid dheer */
 }
 
-.product-detail-container {
+.product-content {
     display: flex;
     gap: 60px; 
     flex-wrap: wrap;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center; 
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -249,31 +250,11 @@ header {
     transform: scale(1.1); 
 }
 
-.thumbnail-gallery {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 
-.thumbnail-gallery img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border: 2px solid #eee;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
-}
-
-.thumbnail-gallery img.active,
-.thumbnail-gallery img:hover {
-    border-color: #4f46e5; /* Highlight active/hovered thumbnail */
-}
 
 /* Product Details Section */
 .product-details {
-    flex: 1.5; /* Qaado meel ka badan */
+    flex: 1; /* Qaado meel ka badan */
     min-width: 350px; /* Minimum width */
     max-width: 600px;
 }
@@ -493,18 +474,21 @@ header {
         padding: 15px;
     }
 
+    .product-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center content */
+        gap: 30px; /* Increase gap for better spacing */
+    }
+
     .product-details h1 {
-        font-size: 1.8em;
+        font-size: 1em;
     }
 
     .product-price {
-        font-size: 1.8em;
+        font-size: 1em;
     }
 
-    .thumbnail-gallery img {
-        width: 60px;
-        height: 60px;
-    }
+   
 
     .size-selector-section {
         flex-direction: column;

@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Nomad Fits</title>
-<link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/about.css" />
 </head>
+
 <body>
-      <header>
+
+  <!-- header -->
+  <header>
     <div class="top-nav-bar">
+
       <div class="container nav-content">
+
         <div class="logo">
           <a href="index.html">Nomad Fits</a>
         </div>
-        <nav class="main-nav">
+
+        <nav class="main-nav" id="mainNav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="products.html">Products</a></li>
+            <li><a href="#">Products</a></li>
           </ul>
         </nav>
 
+        <!-- nav icons -->
+        <div class="nav-icons">
+          <button class="cart-btn" id="cartBtn">
+            <a href="cart.html">
+              <span> 🛒</span>
+              <span class="cart-count" id="cartCount">0</span>
+            </a>
+          </button>
+          <button class="menu-toggle" id="menuToggle">
+            ☰ </button>
+        </div>
       </div>
   </header>
 
+  <!-- hero -->
   <section class="hero">
     <h1>Nomad Fits - Men's Clothing eCommerce</h1>
     <p class="intro">
-      This project is a modern eCommerce website for men's clothing built using 
-      the <a href="https://fakeapi.platzi.com/" target="_blank">Platzi Fake Store API</a>. 
+      This project is a modern eCommerce website for men's clothing built using
+      the <a href="https://fakeapi.platzi.com/" target="_blank">Platzi Fake Store API</a>.
       It demonstrates how to connect a frontend interface with a real API to display products dynamically.
-      The focus is on building a responsive, user-friendly shopping platform suitable for portfolios and real-world learning.
+      The focus is on building a responsive, user-friendly shopping platform suitable for portfolios and real-world
+      learning.
     </p>
   </section>
 
+  <!-- team -->
   <section class="team-section">
     <h2>Team Members</h2>
     <div class="team-container">
@@ -44,7 +65,7 @@
         <h3>Abdiqadir</h3>
         <p>Email: <a href="mailto:abdiqadirabdikarin90@gmail.com">abdiqadirabdikarin90@gmail.com</a></p>
         <p>TItle: Home bage </p>
-        <p>Phone: +252907817977</p>
+       
       </div>
 
       <div class="card">
@@ -52,7 +73,7 @@
         <h3>Abdinasir H.Bashir</h3>
         <p>Email: <a href="mailto:ashnaafi0@gmail.com">ashnaafi0@gmail.com</a></p>
         <p>TItle: Product List</p>
-        <p>Phone: +251939380123</p>
+       
       </div>
 
       <div class="card">
@@ -61,7 +82,6 @@
         <p>Email: <a href="mailto:naqibaxmeddinix@gmail.com">naqibaxmeddinix@gmail.com</a></p>
         <p>TItle: Contact Page </p>
 
-        <p>Phone: +252615497920</p>
       </div>
 
       <div class="card">
@@ -69,16 +89,16 @@
         <h3>mahamed abdifatah mahamed</h3>
         <p>Email: <a href="mailto:khelidali354@gmail.com">khelidali354@gmail.com</a></p>
         <p>TItle: Product Detail Page </p>
-        <p>Phone: +251930735543</p>
-        
+       
+
       </div>
 
       <div class="card">
         <img src="images/Mohamed Ahmed.jpeg" alt="Mohamed Ahmed Mohamed Avatar">
         <h3>Mohamed Ahmed Mohamed</h3>
         <p>Email: <a href="mailto:mohapoi536@gmail.com">mohapoi536@gmail.com</a></p>
-        <p>TItle: Footer and Header  </p>
-        <p>Phone: +2520907238846</p>
+        <p>TItle: Footer and Header </p>
+       
       </div>
 
       <div class="card">
@@ -86,17 +106,17 @@
         <h3>Zakarie Hassan Abdi</h3>
         <p>Email: <a href="mailto:zakihasanabdi443@gmail.com">zakihasanabdi443@gmail.com</a></p>
         <p>TItle: About Us Page</p>
-        <p>Phone: +252614439473</p>
+       
       </div>
 
     </div>
   </section>
-   <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-cta">
         <h3>Join the Nomad Community</h3>
         <input type="email" placeholder="Enter your email">
-      
+
       </div>
       <div class="footer-links">
         <div>
@@ -136,5 +156,10 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="js/menuToggle.js"></script>
+  <script src="js/upDateCart.js"></script>
 </body>
+
 </html>

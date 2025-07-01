@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Nomad Fits</title>
+    <link rel="stylesheet" href="css/productDetail.css"> 
+</head>
+<body>
+
+   <header>
+    <div class="top-nav-bar">
+    
+      <div class="container nav-content">
+        
+        <div class="logo">
+          <a href="index.html">Nomad Fits</a>
+        </div>
+
+        <nav class="main-nav" id="mainNav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Products</a></li>
+          </ul>
+        </nav>
+
+        <!-- nav icons -->
+         <div class="nav-icons">
+                    <button class="cart-btn" id="cartBtn">
+                        <a href="cart.html">
+                            <span> 🛒</span>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </a>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        ☰ </button>
+                </div>
+      </div>
+    </header>
+
+    <main class="product-detail-page-main">
+        <div class="container product-detail-container">
+            <div class="loader" id="productLoader"></div>
+
+            <div class="product-content" id="productContent" style="display: none;">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="https://via.placeholder.com/600x600?text=Product+Image" alt="Main Product Image">
+                    </div>
+                   
+                </div>
+
+                <div class="product-details">
+                    <h1 id="productTitle">Product Name (Loading...)</h1>
+                    <div class="product-rating">
+                        <span class="stars" id="productStars"></span>
+                        <span class="rating-value" id="productRatingValue"></span>
+                        <span class="review-count" id="productReviewCount"></span>
+                    </div>
+
+                    <p class="product-price" id="productPrice">$0.00</p>
+                    <p class="product-description" id="productDescription">Loading product description...</p>
+
+                    <div class="product-meta-info">
+                        <p><strong>Material:</strong> <span id="productMaterial">N/A</span></p>
+                        <p><strong>Sustainability:</strong> <span id="productSustainability">N/A</span></p>
+                    </div>
+
+                    <div class="size-selector-section">
+                        <label for="sizeSelector">Select Size:</label>
+                        <select id="sizeSelector" class="size-selector">
+                            <option value="">Choose a Size</option>
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L">Large</option>
+                            <option value="XL">X-Large</option>
+                        </select>
+                        <button class="btn size-guide-btn" id="sizeGuideBtn">Size Guide</button>
+                    </div>
+
+                  
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <!-- footer -->
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-cta">
+        <h3>Join the Nomad Community</h3>
+        <input type="email" placeholder="Enter your email">
+
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Nomad Fits</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help & Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Us</h4>
+          <p>123 Adventure St, Nomad City, <br>NY 12345</p>
+          <p>Email: info@nomadfits.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Nomad Fits. All rights reserved.</p>
+        <div class="social-icons">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/productDetail.js"></script> </body>
+</html>
